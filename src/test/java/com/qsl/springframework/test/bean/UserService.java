@@ -8,6 +8,10 @@ public class UserService {
 
     private String name;
 
+    private String userId;
+
+    private UserDao userDao;
+
     public UserService() {
     }
 
@@ -16,14 +20,7 @@ public class UserService {
     }
 
     public void queryUserInfo() {
-        System.out.println("查询用户信息: " + name);
-    }
-
-    @Override
-    public String toString() {
-        return "UserService{" +
-                "name='" + name + '\'' +
-                '}';
+        System.out.println("查询用户信息: " + userDao.queryUserName(userId));
     }
 
 }
