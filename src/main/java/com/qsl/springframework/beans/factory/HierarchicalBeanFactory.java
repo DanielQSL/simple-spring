@@ -7,6 +7,6 @@ package com.qsl.springframework.beans.factory;
  * @author shuailong.qian
  * @date 2021/9/23
  */
-public interface HierarchicalBeanFactory {
-    
+public interface HierarchicalBeanFactory extends BeanFactory {
+
 }
